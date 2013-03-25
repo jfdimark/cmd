@@ -1,0 +1,136 @@
+<div class="row">
+<div class="span4">
+<div class="well">
+<div class="avatar">
+    <%= image_tag @user.linkedin.picture %>
+</div><!--/avatar -->
+<br class="clearfix" />
+
+<div class="bio">
+
+
+<h1><%= @user.name %></h1>
+<p><%= @user.linkedin.title %></p>
+</div><!--/bio -->
+<br class="clearfix" />
+
+<div class="contact">
+<p><%= @user.linkedin.location %><i class="icon-home"></i></p>
+<p><%= @user.linkedin.country %> <i class="icon-map-marker"></i></p>
+<p>(555)123-4567 <i class="icon-signal"></i></p>
+<p><%= @user.linkedin.websites[0] %> <i class="icon-globe"></i></p>
+<p><%= @user.email %> <i class="icon-envelope"></i></p>
+</div><!--/contact -->
+<br class="clearfix" />
+
+
+<div class="button no-display">
+    <p><a class="btn no-radius btn-resume no-display" href="#" id="print"><i class="icon-print"></i> Print</a> 
+    <a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href)+'&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a> 
+    <a class="btn no-radius btn-resume no-display" href="#"><i class="icon-list-alt"></i> vCard</a></p>
+</div> <!--/button -->
+
+</div><!--/.well -->
+</div><!--/span-->
+
+<div class="span8">
+<div class="hero-unit">
+<p><%= @user.about_me %></p>
+</div>
+
+<div class="header">
+<h2>Education.</h2>
+<hr />
+</div>
+
+<div class="row-fluid">
+<div class="span6">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span6">
+<h4><i class="icon-plus"></i> Cras lobortis</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+</div><!--/row-->
+<div class="row-fluid">
+<div class="span6">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span6">
+<h4><i class="icon-plus"></i> Cras lobortis</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+</div><!--/row-->
+
+<div class="header">
+<h2>Certifications & Training.</h2>
+<hr />
+</div>
+
+<div class="row">
+<div class="span8">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span8">
+<h4><i class="icon-plus"></i> Cras lobortis</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span8">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+</div><!--/row-->
+
+<div class="header">
+<h2>Expertise.</h2>
+<hr />
+</div>
+
+<div class="row-fluid">
+<div class="span6">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span6">
+<h4><i class="icon-plus"></i> Cras lobortis</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+</div><!--/row-->
+<div class="row-fluid">
+<div class="span6">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span6">
+<h4><i class="icon-plus"></i> Cras lobortis</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+</div><!--/row-->
+
+<div class="header">
+<h2>Work Experience.</h2>
+<hr />
+</div>
+
+<div class="row">
+<div class="span8">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span8">
+<h4><i class="icon-plus"></i> Cras lobortis</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+<div class="span8">
+<h4><i class="icon-plus"></i> Donec lobortis, lectus sed</h4>
+<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+</div><!--/span-->
+</div><!--/row-->
+
+</div><!--/span-->
+</div><!--/row-->
+
+<hr />

@@ -1,9 +1,15 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'sqlite3'
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+gem 'sass-rails',   '~> 3.2.3'
+gem 'coffee-rails', '~> 3.2.1'
+gem 'uglifier', '>= 1.0.3'
+
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem "linkedin-scraper", "~> 0.0.8"
+
+gem "font-awesome-rails"
 
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0"
@@ -17,6 +23,7 @@ gem "launchy", ">= 2.2.0", :group => :test
 gem "capybara", ">= 2.0.2", :group => :test
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]
 gem "bootstrap-sass", ">= 2.3.0.0"
+
 gem "devise", ">= 2.2.3"
 gem "cancan", ">= 1.6.9"
 gem "rolify", ">= 3.2.0"

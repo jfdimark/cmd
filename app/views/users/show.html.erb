@@ -1,0 +1,15 @@
+<h3> User </h3>
+
+<% unless current_user.linkedin_profile.present? or current_user.about_me.present? %>
+
+<p><%= link_to 'Import from LinkedIn', '#' %></p>
+
+<p><%= link_to 'Create your profile from scratch', '#' %></p>
+
+<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+
+<% else %>
+
+<%= render 'profile' %>
+
+<% end %>
