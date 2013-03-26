@@ -30,7 +30,11 @@ class User < ActiveRecord::Base
       case auth.provider
       when 'linkedin'
         user.linkedin_profile = auth.info.urls.public_profile
-        user.about_me = auth.info.summary
+        # user.about_me = auth.extra.raw_info
+        # user.num_recommendations = auth.extra(:fields => ["num-recommenders"])
+        # user.recommendations = auth.extra(:fields => ["recommendations-received"])
+        # user.connections = auth.extra(:fields => ["connections"])
+        # user.groups = auth.extra(:fields => ["group-memberships"])
       end
     end
   end
@@ -58,5 +62,6 @@ class User < ActiveRecord::Base
       super
     end
   end
+
 
 end

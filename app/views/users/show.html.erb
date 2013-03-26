@@ -1,5 +1,3 @@
-<h3> User </h3>
-
 <% unless current_user.linkedin_profile.present? or current_user.about_me.present? %>
 
 <p><%= link_to 'Import from LinkedIn', '#' %></p>

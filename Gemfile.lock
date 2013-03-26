@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/jfdimark/linkedin-scraper.git
+  revision: 48d34dc15a3ec626c65453019538c09a98fb2b2e
+  specs:
+    linkedin-scraper (0.0.8)
+      mechanize
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -122,8 +129,6 @@ GEM
     json (1.7.7)
     launchy (2.2.0)
       addressable (~> 2.3)
-    linkedin-scraper (0.0.8)
-      mechanize
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -260,7 +265,7 @@ DEPENDENCIES
   hub (>= 1.10.2)
   jquery-rails
   launchy (>= 2.2.0)
-  linkedin-scraper (~> 0.0.8)
+  linkedin-scraper!
   omniauth
   omniauth-linkedin
   quiet_assets (>= 1.0.2)

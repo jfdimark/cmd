@@ -7,8 +7,7 @@ gem 'uglifier', '>= 1.0.3'
 
 gem 'omniauth'
 gem 'omniauth-linkedin'
-gem "linkedin-scraper", "~> 0.0.8"
-
+gem "linkedin-scraper", :git => "https://github.com/jfdimark/linkedin-scraper.git"
 gem "font-awesome-rails"
 
 gem 'jquery-rails'

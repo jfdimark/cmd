@@ -1,0 +1,20 @@
+<% @user.linkedin.education.in_groups_of(2, false) do |g| %>
+
+	<div class="row-fluid">
+
+<% g.each do |c| %>
+
+		<div class="span6">
+	
+			<h4><i class="icon-plus"></i><%= c[:name] %></h4>
+			<h5><%= c[:period] %></h5>
+			<p><%= c[:description] %></p>
+		
+		</div><!--/span-->
+			<% end %>
+
+	</div><!--/row-->
+
+
+<% end %>
+

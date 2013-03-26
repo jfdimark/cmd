@@ -1,0 +1,11 @@
+<% @user.linkedin.current_companies.each do |c| %>
+
+<div class="row">
+	<div class="span8">
+		<h4><i class="icon-plus"></i><%= c[:current_company] %></h4>
+		<h5><%= c[:current_title] %></h5>
+		<p><%= c[:description] %></p>
+		<p><%= c[:company_url] %></p>
+	</div><!--/span-->
+</div>
+<% end %>
