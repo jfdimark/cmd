@@ -1,8 +1,14 @@
 <% unless current_user.linkedin_profile.present? or current_user.about_me.present? %>
 
-<p><%= link_to 'Import from LinkedIn', '#' %></p>
+<%= simple_form_for(:user, :as => @user, :url => {controller: "registrations"}, :html => {:class => 'form-vertical' }) do |f| %>
 
-<p><%= link_to 'Create your profile from scratch', '#' %></p>
+	<%= f.input :linkedin_profile, :autofocus => true %>
+
+	<%= f.button :submit, 'Import', :class => 'btn-primary' %>
+
+<% end %>
+
+<p><%= link_to 'Create your profile from scratch', edit_user_registration_path %></p>
 
 <%= link_to "Log out", destroy_user_session_path, method: :delete %>
 

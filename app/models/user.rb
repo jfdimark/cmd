@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   attr_accessible :role_ids, :as => :admin
 
   def linkedin
-    lipro = profile(self.linkedin_profile)
+    linkedin = profile(self.linkedin_profile)
   end
 
   def profile(url)
